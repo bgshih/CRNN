@@ -7,7 +7,7 @@ This software implements the Convolutional Recurrent Neural Network (CRNN), a co
 
 **UPDATE May 1, 2017** A PyTorch [port](https://github.com/meijieru/crnn.pytorch) has been made by [@meijieru](https://github.com/meijieru).
 
-**UPDATE Jun 19, 2017** For an end-to-end text detector+recognizer, check out the [CTPN+CRNN implementation](https://github.com/AKSHAYUBHAT/DeepVideoAnalytics/tree/master/notebooks/OCR) by [@AKSHAYUBHAT](https://github.com/AKSHAYUBHAT).
+**UPDATE Jun 19, 2017** For an end-to-end text detector+recognizer, check out the [CTPN+CRNN implementation](https://github.com/AKSHAYUBHAT/DeepVideoAnalytics/) by [@AKSHAYUBHAT](https://github.com/AKSHAYUBHAT).
 
 Build
 -----
@@ -54,7 +54,7 @@ Follow the following steps to train a new model on your own dataset.
 
   1. Create a new LMDB dataset. A python program is provided in ``tool/create_dataset.py``. Refer to the function ``createDataset`` for details (need to ``pip install lmdb`` first).
   2. Create model directory under ``model/``. For example, ``model/foo_model``. Then create
-   configuraton file ``config.lua`` under the model directory. You can copy ``model/crnn_demo/config.lua`` and do modifications.
+   configuration file ``config.lua`` under the model directory. You can copy ``model/crnn_demo/config.lua`` and do modifications.
   3. Go to ``src/`` and execute ``th main_train.lua ../models/foo_model/``. Model snapshots and logging file will be saved into the model directory.
 
 
